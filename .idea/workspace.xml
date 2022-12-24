@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c8660-6954-407d-b435-444f222328e8" name="Changes" comment="" />
+    <list default="true" id="002c8660-6954-407d-b435-444f222328e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/news/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,24 +31,33 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2J2pjSLRADnMojeljNKznH4ef5P" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Volumes/Python_Project/News_post",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Python_Project/News_post&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="News_post" />
@@ -68,7 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671286166411</updated>
       <workItem from="1671286168041" duration="34000" />
-      <workItem from="1671286237004" duration="659000" />
+      <workItem from="1671286237004" duration="11960000" />
+      <workItem from="1671857655449" duration="8907000" />
     </task>
     <servers />
   </component>
@@ -85,6 +109,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

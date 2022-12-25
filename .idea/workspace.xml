@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c8660-6954-407d-b435-444f222328e8" name="Changes" comment="Начало сборки моделей News">
-      <change afterPath="$PROJECT_DIR$/command.py" afterDir="false" />
+    <list default="true" id="002c8660-6954-407d-b435-444f222328e8" name="Changes" comment="Финиш сборки моделей News">
+      <change afterPath="$PROJECT_DIR$/NewsPaper/news/migrations/0002_remove_post_content_remove_post_header_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/45f5915b-85c1-4b47-943d-3a06ebcea0ce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/45f5915b-85c1-4b47-943d-3a06ebcea0ce.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/news/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/command.py" beforeDir="false" afterPath="$PROJECT_DIR$/command.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,7 @@
       <updated>1671286166411</updated>
       <workItem from="1671286168041" duration="34000" />
       <workItem from="1671286237004" duration="11960000" />
-      <workItem from="1671857655449" duration="19075000" />
+      <workItem from="1671857655449" duration="25502000" />
     </task>
     <task id="LOCAL-00001" summary="Начало сборки моделей News">
       <created>1671901878179</created>
@@ -107,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671901904847</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Финиш сборки моделей News">
+      <created>1671986133175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671986133175</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +136,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Начало сборки моделей News" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начало сборки моделей News" />
+    <MESSAGE value="Финиш сборки моделей News" />
+    <option name="LAST_COMMIT_MESSAGE" value="Финиш сборки моделей News" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

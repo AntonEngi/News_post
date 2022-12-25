@@ -1,39 +1,115 @@
+python manage.py shell
+from news.models import *
 #создание пользователя
-us1 = User.objects.create_user(username='Petrov Ivan Stepanovich')
-us2 = User.objects.create_user(username='Orlov Vasilij Ivanovich')
-us3 = User.objects.create_user(username='Ribko Elena Petrovna')
+us1 = User.objects.create_user(username='Petrov Ivan Stepanovic')
+us2 = User.objects.create_user(username='Orlov Vasilij Ivanovic')
+#us3 = User.objects.create_user(username='Ribko Elena Petrovna')
 
 #Авторы
-Author.objects.create(autorUser=us1)
-Author.objects.create(autorUser=us2)
+Author.objects.create(authorUser=us1)
+Author.objects.create(authorUser=us2)
 #Категории
 Category.objects.create(name='IT')
-
+Category.objects.create(name='TECH')
+Category.objects.create(name='HEALTH')
+Category.objects.create(name='TRAVEL')
 #Статьи
 author = Author.objects.get(id=1)
-Post.objects.create(author=author, categoryType='NW', title='sometitle', text='somebigtext')
+Post.objects.create(author=author, categoryType='AR', title='Как программисту работать и путешествовать по миру', text='''Перевод статьи «How to travel the world as a developer» Все мы такое видели. Фото друга в Facebook, где он сидит на райском пляже с ноутбуком и напитком в кокосе, и подпись: «Мой сегодняшний офис».
+
+Для многих людей это не жизнь, а мечта. И нетрудно понять, почему. Когда работа позволяет вам самостоятельно устанавливать расписание и путешествовать, это круто. Но не всегда легко.
+
+Давайте поговорим о том, с чего начать воплощение такой мечты. Поговорим о ресурсах, которые могут помочь, а также о вещах, на которые стоит обратить внимание.
+
+Ваши ожидания от дистанционной работы должны быть реалистичными
+Прежде всего, давайте проясним одну вещь. Пляж в качестве рабочего места просто отвратителен. Можете попытаться поработать там раз или два, чтобы наделать фоточек и заставить друзей завидовать вашей невероятной жизни. Но факты вещь упрямая:
+
+На пляже нет WiFi.
+Песок и соль вредят вашему компьютеру (песок + magsafe-адаптер = ничего хорошего).
+На экране будут ужасные солнечные блики.
+И есть еще сотня других причин, по которым вы не захотите даже пытаться работать на пляже.
+
+Реальность такова, что при дистанционной работы вы будете проводить большую часть вашего времени в кафе, коворкингах, общественных местах с WiFi и дома. И это прекрасно! Ничего плохого в этом нет!
+
+И, кстати, все эти люди, которые постят свои фотки в стиле «мой сегодняшний офис», наверняка сыты всем этим по горло. ''')
+
+author = Author.objects.get(id=1)
+Post.objects.create(author=author, categoryType='AR', title='Как путешествия влияют на мозг и личность: 5 выводов ученых', text='''Для многих путешествия — это обязательное условие счастливой жизни.
+
+Как показывают опросы, поездки занимают седьмое место в рейтинге источников счастья для россиян. Возможность путешествовать респонденты оценивают выше, чем, например, общение с друзьями, личную безопасность и даже богатство.
+
+Поездки не только дают ощущение счастья, но и в целом благотворно влияют на психику и здоровье, считают ученые. Вот некоторые выводы из исследований.
+
+Путешествия меняют нашу личность
+В 2013 году немецкие психологи предположили, что путешествия за границу влияют на личность человека не меньше, чем такие серьезные события, как отъезд из дома родителей, первая работа или романтические отношения. Характер может меняться под воздействием окружения — а поездки как раз дают возможность пообщаться с людьми, непохожими на соотечественников.
+
+Становимся ли мы другими людьми, отправляясь в путь? Развитие личности путешественников — ResearchGate
+В течение года исследователи наблюдали за 1134 студентами. Почти половина отправилась учиться в другие страны, а вторая группа провела весь год в Германии. Перед началом эксперимента все участники заполнили анкету, где отвечали на вопросы о том, насколько им присущи пять качеств: открытость новому опыту, добросовестность, экстраверсия, доброжелательность и невротизм.
+
+Опрос повторили в конце учебного года и сравнили результаты. Они резко различались у тех, кто уехал, и тех, кто остался. Исследование показало, что студенты, которые провели учебный год на родине, стали чуть менее открытыми, в отличие от уехавших за границу. Доброжелательность у тех, кто учился в Германии, почти не изменилась, а вот у путешественников увеличилась — и к концу наблюдений была почти в пять раз выше, чем у участников, оставшихся дома. Кроме того, поездки в другие страны сделали участников эксперимента менее тревожными.
+
+/welcome-abroad/
+«Я фотографировался на фоне еды»: 22 истории о первой поездке за рубеж
+Исследователи считают, что некоторые черты характера меняются благодаря столкновению с культурными различиями. Поначалу это создает дискомфорт, но постепенно люди перестают нервничать и начинают воспринимать новую среду более благосклонно. Для этого необязательно уезжать учиться по обмену на целый год — достаточно в поездках общаться с иностранцами и погружаться в новую культуру.
+
+Опыт зарубежных поездок делает нас более доброжелательными не только по отношению к иностранцам. Американские ученые обнаружили, что путешественники, посетившие много стран, в целом больше доверяют людям. Причем длительность путешествия оказалась не так важна, как количество поездок за границу: чем более разнообразный опыт получает человек, тем проще ему доверять окружающим.''')
+
+author = Author.objects.get(id=2)
+Post.objects.create(author=author, categoryType='NW', title='Астрономы нашли древнее «сердце» нашей галактики', text='''Возраст Млечного Пути составляет примерно 13,6 млрд. лет. Сложно заглянуть в столь далекое прошлое, но ученые-астрономы из Института астрономии Макса Планка попробовали это сделать. И им удалось найти древнее «сердце» нашей галактики. Это группа из 18 000 звезд, ставших ее первичной основой. Для этого исследователям пришлось составить трехмерную галактическую карту и при помощи нейросети проанализировать химический состав порядка 2 миллионов звезд.
+
+Астрономы исходили из того, что звезды появившиеся в одно время, имеют схожие параметры и химический состав. Ключевой характеристикой для них стала степень металлизации спектра звезд, показывающая содержание в них металлов. В данном случае, большие концентрации тяжелых металлов характерны для сравнительно «молодых» звезд. Первые звезды, образовавшие нашу галактику, состояли из более легких веществ. Астрономы назвали их «бедным старым сердцем» потому, что количество металлов в них было заметно ниже среднего.
+
+Исследователи сообщают, что возраст звезд «галактического сердца» составляет 12,5 миллиарда лет. Они уверены в том, что изучение этой группы протозвезд может пролить свет на историю формирования нашей галактики и ее развитие в течение всего времени существования. Исследуя их при помощи современных подходов и технологий, можно будет получить ответы на вопросы, давно волнующие астрономов.''')
     #Проверка
     Post.objects.get(id=1).title
 
 #Категория
 Post.objects.get(id=1).postCategory.add(Category.objects.get(id=1))
-
+Post.objects.get(id=1).postCategory.add(Category.objects.get(id=4))
+Post.objects.get(id=2).postCategory.add(Category.objects.get(id=3))
+Post.objects.get(id=2).postCategory.add(Category.objects.get(id=4))
+Post.objects.get(id=3).postCategory.add(Category.objects.get(id=2))
 #Комментарии
-Comment.objects.create(commentPost=Post.object.get(id=1), commentUser=Author.objects.get(id=1).authorUser, text='anytextauthor')
-
+Comment.objects.create(commentPost=Post.objects.get(id=1), commentUser=Author.objects.get(id=1).authorUser, text='Good idea')
+Comment.objects.create(commentPost=Post.objects.get(id=2), commentUser=Author.objects.get(id=1).authorUser, text='Мне нравится путешествовать в свободное время')
+Comment.objects.create(commentPost=Post.objects.get(id=3), commentUser=Author.objects.get(id=1).authorUser, text='Lots of free time...')
+Comment.objects.create(commentPost=Post.objects.get(id=1), commentUser=Author.objects.get(id=2).authorUser, text='Lots of implementation issues. It is necessary to think over the route in advance.')
+Comment.objects.create(commentPost=Post.objects.get(id=2), commentUser=Author.objects.get(id=1).authorUser, text='В некоторых местах можно нанести непоправимые вред здоровью')
 #Лайки дизлайки
 Comment.objects.get(id=1).like()
+Comment.objects.get(id=1).like()
+Comment.objects.get(id=1).like()
+Comment.objects.get(id=2).like()
+Comment.objects.get(id=3).like()
+Comment.objects.get(id=3).dislike()
+Comment.objects.get(id=3).dislike()
+Comment.objects.get(id=4).like()
+Comment.objects.get(id=4).like()
+Post.objects.get(id=1).like()
+Post.objects.get(id=1).like()
+Post.objects.get(id=1).like()
+Post.objects.get(id=2).like()
+Post.objects.get(id=2).like()
+Post.objects.get(id=2).dislike()
+Post.objects.get(id=2).like()
+Post.objects.get(id=3).like()
+Post.objects.get(id=3).like()
+Post.objects.get(id=3).dislike()
+Post.objects.get(id=3).dislike()
+Post.objects.get(id=1).like()
     #Comment.objects.get(id=1).rating
 
 #Рейтинг автора
 a = Author.objects.get(id=1)
 a.update_rating()
 a.ratingAuthor
+a = Author.objects.get(id=2)
+a.update_rating()
+a.ratingAuthor
     #Post.objects.get(id=1).like()
 
 #Вывести рейтинг лучшего пользователя
 a = Author.objects.order_by('-ratingAuthor')[:1]
-
-    #for i in a:
-        # i.ratingAuthor
-        # i.authorUser.username
+for i in a:
+     i.ratingAuthor
+     i.authorUser.username

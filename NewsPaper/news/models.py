@@ -20,6 +20,7 @@ from django.db.models import Sum
 class Author(models.Model):
     authorUser = models.OneToOneField(User, on_delete=models.CASCADE) # cвязь «один к одному» с встроенной моделью пользователей User;
     ratingAuthor = models.SmallIntegerField(default=0) # рейтинг пользователя
+    ratingPost = models.SmallIntegerField(default=0)
     # full_name = models.CharField(max_length=255)
     # info_author = models.TextField()
     def update_rating(self):
@@ -32,14 +33,15 @@ class Author(models.Model):
         cRat += commentRat.get('commentRating')
 
         self.ratingAuthor = pRat * 3 + cRat
+        self.ratingPost = pRat
         self.save()
 class Category(models.Model):
     # title_category = models.CharField(max_length = 2, choices = CATEGORIES, unique = True, default = world)
     # description_category = models.CharField(max_length=255)
     name = models.CharField(max_length=64, unique=True)
 class Post(models.Model):
-    header = models.CharField(max_length=255) #заголовок статьи
-    content = models.TextField() #текст статьи
+    # header = models.CharField(max_length=255) #заголовок статьи
+    # content = models.TextField() #текст статьи
     date_of_post = models.DateTimeField(auto_now_add=True) #дата и время создания
     author = models.ForeignKey(Author, on_delete=models.CASCADE)# связь «один ко многим» с моделью Author
 
@@ -54,6 +56,7 @@ class Post(models.Model):
     postCategory = models. ManyToManyField(Category, through='PostCategory')
     title = models.CharField(max_length=128)
     rating = models.SmallIntegerField(default=0)
+    text = models.TextField()
 
     # связь «многие ко многим» с моделью Category (с дополнительной моделью PostCategory)
     def like(self):# рейтинг статьи/новости.
@@ -63,6 +66,8 @@ class Post(models.Model):
     def dislike(self):
         self.rating -= 1
         self.save()
+
+
     # id_author = models.IntegerField(Author)
 class PostCategory(models.Model):
     postThrough = models.ForeignKey(Post, on_delete=models.CASCADE)

@@ -4,25 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c8660-6954-407d-b435-444f222328e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/accounts/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/news/migrations/0001_initial.py" afterDir="false" />
+    <list default="true" id="002c8660-6954-407d-b435-444f222328e8" name="Changes" comment="Начало сборки моделей News">
+      <change afterPath="$PROJECT_DIR$/command.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/news/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,8 +91,23 @@
       <updated>1671286166411</updated>
       <workItem from="1671286168041" duration="34000" />
       <workItem from="1671286237004" duration="11960000" />
-      <workItem from="1671857655449" duration="8907000" />
+      <workItem from="1671857655449" duration="19075000" />
     </task>
+    <task id="LOCAL-00001" summary="Начало сборки моделей News">
+      <created>1671901878179</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671901878179</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Начало сборки моделей News">
+      <created>1671901904847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671901904847</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +126,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Начало сборки моделей News" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начало сборки моделей News" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
